@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>div</title>
+		<meta charset="UTF-8"></meta>
+		
+		<link rel="stylesheet" href="css/css.css" />
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/javascript.js" type="text/javascript" charset="UTF-8"></script>
+	</head>
+
+	<body>
+
+		<div class="Titlebar"></div>
+
+		<!--前三周期的行-->
+		<div class="Top3Groups">
+
+			<!--前三行显示栏左边部分-->
+			<div class="Top3Groups_Left">
+				<!--数字标记-->
+				<div class="Numberline">
+					<div class="PeriodNumber"></div>
+					<div class="GroupNumber" id="IA">
+						IA
+					</div>
+
+				</div>
+				<!--第一周期-->
+				<div class="GroupLine">
+					<div class="PeriodNumber" id="zhouqi1">1</div>
+					<!--氢-->
+					<div class="Nonmetal" id="1" onclick="mouseClick(1)">
+						<div class="Element_Z">
+							1
+						</div>
+						<div class="Element_Font">
+							H
+						</div>
+
+					</div>
+					<div class="Null">
+						<div class="Numberline_2">
+							<div class="GroupNumber"  id="IIA">
+								IIA
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--第二周期-->
+
+				<div class="GroupLine">
+					<div class="PeriodNumber" id="zhouqi2">2</div>
+					<!--Li-->
+					<div class="Alkali_metal" id="3" onclick="mouseClick(3)">
+						<div class="Element_Z">
+							3
+						</div>
+						<div class="Element_Font">
+							Li
+						</div>
+					</div>
+					<!--Be-->
+					<div class="Alkali_earth_metal" id="4" onclick="mouseClick(4)">
+						<div class="Element_Z">
+							4
+						</div>
+						<div class="Element_Font">
+							Be
+						</div>
+					</div>
+
+				</div>
+
+				<!--第三周期-->
+
+				<div class="GroupLine">
+					<div class="PeriodNumber"  id="zhouqi3">3</div>
+					<!--Na-->
+					<div class="Alkali_metal" id="11" onclick="mouseClick(11)">
+						<div class="Element_Z">
+							11
+						</div>
+						<div class="Element_Font">
+							Na
+						</div>
+					</div>
+					<!--Mg-->
+					<div class="Alkali_earth_metal" id="12" onclick="mouseClick(12)">
+						<div class="Element_Z">
+							12
+						</div>
+						<div class="Element_Font">
+							<b>Mg</b>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--前三行显示栏部分-->
+			<div class="Top3Groups_Monitor">
+				<div class="Monitor">
+				</div>
+				<div class="Null">
+					<div class="GroupNumber"  id="IB" style=" margin-top: 0;">
+						IB
+					</div>
+
+				</div>
+				<div class="Null">
+					<div class="GroupNumber" id="IIB" style=" margin-top: 0;">
+						IIB
+					</div>
+				</div>
+				<div class="Null">
+					<div class="GroupNumber" id="IIIB" style="margin-top: 0;">
+						IIIB
+					</div>
+				</div>
+
+			</div>
+
+			<!--前三行标记栏部分-->
+			<div class="Top3Groups_Mark">
+				<div class="Mark_Line" id="Main_group_metal">
+					<div class="Main_group_metal_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						主族金属元素
+					</div>
+				</div>
+				<div class="Mark_Line" id="Nonmetal">
+					<div class="Nonmetal_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						其他非金属元素
+					</div>
+				</div>
+
+				<div class="Mark_Line" id="Transition_elements">
+					<div class="Transition_elements_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						过度元素
+					</div>
+				</div>
+				<div class="Mark_Line" id="Halogen">
+					<div class="Halogen_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						卤族元素
+					</div>
+				</div>
+				<div class="Mark_Line" id="Lanthanoid">
+					<div class="Lanthanoid_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						镧系金属
+					</div>
+				</div>
+				<div class="Mark_Line" id="Actinoid">
+					<div class="Actinoid_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						锕系金属
+					</div>
+				</div>
+				<div class="Mark_Line"  id="Inert_gas">
+					<div class="Inert_gas_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						稀有气体元素
+					</div>
+				</div>
+				<div class="Mark_Line" id="Alkali_earth_metal">
+					<div class="Alkali_earth_metal_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						碱土金属元素
+					</div>
+				</div>
+				<div class="Mark_Line" id="Alkali_metal">
+					<div class="Alkali_metal_Grid">
+
+					</div>
+					<div class="Element_Mark">
+						碱金属金属
+					</div>
+				</div>
+				<div class="Mark_Line">
+				</div>
+				<div class="Null">
+					<div class="GroupNumber" id="IVB" style="margin-top: 0;">
+						IVB
+					</div>
+				</div>
+				<div class="Null">
+					<div class="GroupNumber" id="VB" style="margin-top: 0;">
+						VB
+					</div>
+				</div>
+				<div class="Null">
+					<div class="GroupNumber" id="VIB" style="margin-top: 0;">
+						VIB
+					</div>
+				</div>
+				<div class="Null">
+					<div class="GroupNumber" id="VIIB" style="margin-top: 0;">
+						VIIB
+					</div>
+				</div>
+				<!--8族的边界-->
+				<div class="Border8group_Top">
+					<div class="Null"></div>
+					<div class="Null">
+						<div class="GroupNumber" id="VIII" style="margin-top: 0;">
+							VIII
+						</div>
+					</div>
+					<div class="Null"></div>
+				</div>
+			</div>
+
+			<!--前三行标记栏右边元素部分-->
+			<div class="Top3Groups_Right">
+				<div class="Numberline">
+					<div class="Null">
+
+					</div>
+					<div class="Null">
+
+					</div>
+					<div class="Null">
+
+					</div>
+					<div class="Null">
+
+					</div>
+					<div class="Null">
+
+					</div>
+					<div class="GroupNumber" id="VIIIA">
+						VIIIA
+					</div>
+				</div>
+				<!--第一周期后半部分-->
+				<div class="GroupLine">
+					<div class="Null">
+						<div class="Numberline_2">
+							<div class="GroupNumber"  id="IIIA">
+								IIIA
+							</div>
+						</div>
+					</div>
+					<div class="Null">
+						<div class="Numberline_2">
+							<div class="GroupNumber"  id="IVA">
+								IVA
+							</div>
+						</div>
+					</div>
+					<div class="Null">
+						<div class="Numberline_2">
+							<div class="GroupNumber"  id="VA">
+								VA
+							</div>
+						</div>
+					</div>
+					<div class="Null">
+						<div class="Numberline_2">
+							<div class="GroupNumber" id="VIA">
+								VIA
+							</div>
+						</div>
+
+					</div>
+					<div class="Null">
+						<div class="Numberline_2">
+							<div class="GroupNumber"  id="VIIA">
+								VIIA
+							</div>
+						</div>
+
+					</div>
+					<!--氦-->
+				<div class="Inert_gas" id="2" onclick="mouseClick(2)">
+						<div class="Element_Z">
+							2
+						</div>
+						<div class="Element_Font">
+							He
+						</div>
+					</div>
+				</div>
+				<!--第二周期后半部分-->
+
+				<div class="GroupLine">
+					<!--B-->
+					<div class="Nonmetal" id="5" onclick="mouseClick(5)">
+						<div class="Element_Z">
+							5
+						</div>
+						<div class="Element_Font">
+							B
+						</div>
+					</div>
+					<!--C-->
+					<div class="Nonmetal" id="6" onclick="mouseClick(6)">
+						<div class="Element_Z">
+							6
+						</div>
+						<div class="Element_Font">
+							C
+						</div>
+					</div>
+					<!--N-->
+					<div class="Nonmetal" id="7" onclick="mouseClick(7)">
+						<div class="Element_Z">
+							7
+						</div>
+						<div class="Element_Font">
+							N
+						</div>
+					</div>
+					<!--O-->
+					<div class="Nonmetal" id="8" onclick="mouseClick(8)">
+						<div class="Element_Z">
+							8
+						</div>
+						<div class="Element_Font">
+							O
+						</div>
+					</div>
+					<!--F-->
+					<div class="Halogen" id="9" onclick="mouseClick(9)">
+						<div class="Element_Z">
+							9
+						</div>
+						<div class="Element_Font">
+							F
+						</div>
+					</div>
+					<div class="Inert_gas" id="10" onclick="mouseClick(10)">
+						<div class="Element_Z">
+							10
+						</div>
+						<div class="Element_Font">
+							Ne
+						</div>
+					</div>
+				</div>
+				<!--第三周期后半部分-->
+				<div class="GroupLine">
+					<!--Al-->
+					<div class="Main_group_metal" id="13" onclick="mouseClick(13)">
+						<div class="Element_Z">
+							13
+						</div>
+						<div class="Element_Font">
+							Al
+						</div>
+					</div>
+					<!--Si-->
+					<div class="Nonmetal" id="14" onclick="mouseClick(14)">
+						<div class="Element_Z">
+							14
+						</div>
+						<div class="Element_Font">
+							Si
+						</div>
+					</div>
+					<!--P-->
+					<div class="Nonmetal" id="15" onclick="mouseClick(15)">
+						<div class="Element_Z">
+							15
+						</div>
+						<div class="Element_Font">
+							P
+						</div>
+					</div>
+					<!--S-->
+					<div class="Nonmetal" id="16" onclick="mouseClick(16)">
+						<div class="Element_Z">
+							16
+						</div>
+						<div class="Element_Font">
+							S
+						</div>
+					</div>
+					<!--Cl-->
+					<div class="Halogen" id="17" onclick="mouseClick(17)">
+						<div class="Element_Z">
+							17
+						</div>
+						<div class="Element_Font">
+							Cl
+						</div>
+					</div>
+					<!--Ar-->
+					<div class="Inert_gas" id="18" onclick="mouseClick(18)">
+						<div class="Element_Z">
+							18
+						</div>
+						<div class="Element_Font">
+							Ar
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--第四周期-->
+
+		<div class="GroupLine">
+			<div class="PeriodNumber" id="zhouqi4">4</div>
+			<!--K-->
+			<div class="Alkali_metal" id="19" onclick="mouseClick(19)">
+				<div class="Element_Z">
+					19
+				</div>
+				<div class="Element_Font">
+					K
+				</div>
+			</div>
+			<!--Ca-->
+			<div class="Alkali_earth_metal" id="20" onclick="mouseClick(20)">
+				<div class="Element_Z">
+					20
+				</div>
+				<div class="Element_Font">
+					Ca
+				</div>
+			</div>
+			<!--Sc-->
+			<div class="Transition_elements" id="21" onclick="mouseClick(21)">
+				<div class="Element_Z">
+					21
+				</div>
+				<div class="Element_Font">
+					Sc
+				</div>
+			</div>
+			<!--Ti-->
+			<div class="Transition_elements" id="22" onclick="mouseClick(22)">
+				<div class="Element_Z">
+					22
+				</div>
+				<div class="Element_Font">
+					Ti
+				</div>
+			</div>
+			<!--V-->
+			<div class="Transition_elements" id="23" onclick="mouseClick(23)">
+				<div class="Element_Z">
+					23
+				</div>
+				<div class="Element_Font">
+					V
+				</div>
+			</div>
+			<!--Cr-->
+			<div class="Transition_elements" id="24" onclick="mouseClick(24)">
+				<div class="Element_Z">
+					24
+				</div>
+				<div class="Element_Font">
+					Cr
+				</div>
+			</div>
+			<!--Mn-->
+			<div class="Transition_elements" id="25" onclick="mouseClick(25)">
+				<div class="Element_Z">
+					25
+				</div>
+				<div class="Element_Font">
+					Mn
+				</div>
+			</div>
+			<!--Fe-->
+			<div class="Transition_elements"id="26" onclick="mouseClick(26)">
+				<div class="Element_Z">
+					26
+				</div>
+				<div class="Element_Font">
+					Fe
+				</div>
+			</div>
+			<!--Co-->
+			<div class="Transition_elements"id="27" onclick="mouseClick(27)">
+				<div class="Element_Z">
+					27
+				</div>
+				<div class="Element_Font">
+					Co
+				</div>
+			</div>
+			<!--8族的边界-->
+			<div class="Border8group">
+				<!--Ni-->
+				<div id="28" class="Transition_elements" onclick="mouseClick(28)">
+					<div class="Element_Z">
+						28
+					</div>
+					<div class="Element_Font">
+						Ni
+					</div>
+				</div>
+				<!--Cu-->
+				<div class="Transition_elements"id="29" onclick="mouseClick(29)">
+					<div class="Element_Z">
+						29
+					</div>
+					<div class="Element_Font">
+						Cu
+					</div>
+				</div>
+				<!--Zn-->
+				<div class="Transition_elements"id="30" onclick="mouseClick(30)">
+					<div class="Element_Z">
+						30
+					</div>
+					<div class="Element_Font">
+						Zn
+					</div>
+				</div>
+			</div>
+			<!--Ga-->
+			<div class="Main_group_metal"id="31" onclick="mouseClick(31)">
+				<div class="Element_Z">
+					31
+				</div>
+				<div class="Element_Font">
+					Ga
+				</div>
+			</div>
+			<!--Ge-->
+			<div class="Main_group_metal"id="32" onclick="mouseClick(32)">
+				<div class="Element_Z">
+					32
+				</div>
+				<div class="Element_Font">
+					Ge
+				</div>
+			</div>
+			<!--As-->
+			<div class="Nonmetal"id="33" onclick="mouseClick(33)">
+				<div class="Element_Z">
+					33
+				</div>
+				<div class="Element_Font">
+					As
+				</div>
+			</div>
+			<!--Sn-->
+			<div class="Nonmetal"id="34" onclick="mouseClick(34)">
+				<div class="Element_Z">
+					34
+				</div>
+				<div class="Element_Font">
+					Sn
+				</div>
+			</div>
+			<!--Br-->
+			<div class="Halogen"id="35" onclick="mouseClick(35)">
+				<div class="Element_Z">
+					35
+				</div>
+				<div class="Element_Font">
+					Br
+				</div>
+			</div>
+			<!--Kr-->
+			<div class="Inert_gas"id="36" onclick="mouseClick(36)">
+				<div class="Element_Z">
+					36
+				</div>
+				<div class="Element_Font">
+					Kr
+				</div>
+			</div>
+		</div>
+
+		<!--第五周期-->
+
+		<div class="GroupLine">
+			<div class="PeriodNumber" id="zhouqi5">5</div>
+			<!--Rb-->
+			<div class="Alkali_metal"id="37" onclick="mouseClick(37)">
+				<div class="Element_Z">
+					37
+				</div>
+				<div class="Element_Font">
+					Rb
+				</div>
+			</div>
+			<!--Sr-->
+			<div class="Alkali_earth_metal"id="38" onclick="mouseClick(38)">
+				<div class="Element_Z">
+					38
+				</div>
+				<div class="Element_Font">
+					Sr
+				</div>
+			</div>
+			<!--Y-->
+			<div class="Transition_elements"id="39" onclick="mouseClick(39)">
+				<div class="Element_Z">
+					39
+				</div>
+				<div class="Element_Font">
+					Y
+				</div>
+			</div>
+			<!--Zr-->
+			<div class="Transition_elements"id="40" onclick="mouseClick(40)">
+				<div class="Element_Z">
+					40
+				</div>
+				<div class="Element_Font">
+					Zr
+				</div>
+			</div>
+			<!--Nb-->
+			<div class="Transition_elements"id="41" onclick="mouseClick(41)">
+				<div class="Element_Z">
+					41
+				</div>
+				<div class="Element_Font">
+					Nb
+				</div>
+			</div>
+			<!--Mo-->
+			<div class="Transition_elements"id="42" onclick="mouseClick(42)">
+				<div class="Element_Z">
+					42
+				</div>
+				<div class="Element_Font">
+					Mo
+				</div>
+			</div>
+			<!--Tc-->
+			<div class="Transition_elements"id="43" onclick="mouseClick(43)">
+				<div class="Element_Z">
+					43
+				</div>
+				<div class="Element_Font">
+					Tc
+				</div>
+			</div>
+			<!--Ru-->
+			<div class="Transition_elements"id="44" onclick="mouseClick(44)">
+				<div class="Element_Z">
+					44
+				</div>
+				<div class="Element_Font">
+					Ru
+				</div>
+			</div>
+			<!--Rh-->
+			<div class="Transition_elements"id="45" onclick="mouseClick(45)">
+				<div class="Element_Z">
+					45
+				</div>
+				<div class="Element_Font">
+					Rh
+				</div>
+			</div>
+			<!--8族的边界-->
+			<div class="Border8group">
+
+				<!--Pb-->
+				<div class="Transition_elements"id="46" onclick="mouseClick(46)">
+					<div class="Element_Z">
+						46
+					</div>
+					<div class="Element_Font">
+						Pb
+					</div>
+				</div>
+
+				<!--Ag-->
+				<div class="Transition_elements"id="47" onclick="mouseClick(47)">
+					<div class="Element_Z">
+						47
+					</div>
+					<div class="Element_Font">
+						Ag
+					</div>
+				</div>
+				<!--Cd-->
+				<div class="Transition_elements"id="48" onclick="mouseClick(48)">
+					<div class="Element_Z">
+						48
+					</div>
+					<div class="Element_Font">
+						Cd
+					</div>
+				</div>
+
+			</div>
+			<!--In-->
+			<div class="Main_group_metal"id="49" onclick="mouseClick(49)">
+				<div class="Element_Z">
+					49
+				</div>
+				<div class="Element_Font">
+					In
+				</div>
+			</div>
+			<!--Sn-->
+			<div class="Main_group_metal"id="50" onclick="mouseClick(50)">
+				<div class="Element_Z">
+					50
+				</div>
+				<div class="Element_Font">
+					Sn
+				</div>
+			</div>
+			<!--Sb-->
+			<div class="Main_group_metal"id="51" onclick="mouseClick(51)">
+				<div class="Element_Z">
+					51
+				</div>
+				<div class="Element_Font">
+					Sb
+				</div>
+			</div>
+			<!--Te-->
+			<div class="Nonmetal"id="52" onclick="mouseClick(52)">
+				<div class="Element_Z">
+					52
+				</div>
+				<div class="Element_Font">
+					Te
+				</div>
+			</div>
+			<!--I-->
+			<div class="Halogen"id="53" onclick="mouseClick(53)">
+				<div class="Element_Z">
+					53
+				</div>
+				<div class="Element_Font">
+					I
+				</div>
+			</div>
+			<!--Xe-->
+			<div class="Inert_gas"id="54" onclick="mouseClick(54)">
+				<div class="Element_Z">
+					54
+				</div>
+				<div class="Element_Font">
+					Xe
+				</div>
+			</div>
+
+		</div>
+		<!--第六周期-->
+
+		<div class="GroupLine">
+			<div class="PeriodNumber" id="zhouqi6">6</div>
+			<!--Cs-->
+			<div class="Alkali_metal"id="55" onclick="mouseClick(55)">
+				<div class="Element_Z">
+					55
+				</div>
+				<div class="Element_Font">
+					Cs
+				</div>
+			</div>
+			<!--Ba-->
+			<div class="Alkali_earth_metal"id="56" onclick="mouseClick(56)">
+				<div class="Element_Z">
+					56
+				</div>
+				<div class="Element_Font">
+					Ba
+				</div>
+			</div>
+			<!--La-->
+			<div class="Lanthanoid">
+				<div class="Element_Z">
+					57-71
+				</div>
+				<div class="Element_FontLA">
+					La-Lu
+				</div>
+			</div>
+			<!--Hf-->
+			<div class="Transition_elements"id="72" onclick="mouseClick(72)">
+				<div class="Element_Z">
+					72
+				</div>
+				<div class="Element_Font">
+					Hf
+				</div>
+			</div>
+			<!--Ta-->
+			<div class="Transition_elements"id="73" onclick="mouseClick(73)">
+				<div class="Element_Z">
+					73
+				</div>
+				<div class="Element_Font">
+					Ta
+				</div>
+			</div>
+			<!--W-->
+			<div class="Transition_elements"id="74" onclick="mouseClick(74)">
+				<div class="Element_Z">
+					74
+				</div>
+				<div class="Element_Font">
+					W
+				</div>
+			</div>
+			<!--Re-->
+			<div class="Transition_elements"id="75" onclick="mouseClick(75)">
+				<div class="Element_Z">
+					75
+				</div>
+				<div class="Element_Font">
+					Re
+				</div>
+			</div>
+			<!--Os-->
+			<div class="Transition_elements"id="76" onclick="mouseClick(76)">
+				<div class="Element_Z">
+					76
+				</div>
+				<div class="Element_Font">
+					Os
+				</div>
+			</div>
+			<!--Ir-->
+			<div class="Transition_elements"id="77" onclick="mouseClick(77)">
+				<div class="Element_Z">
+					77
+				</div>
+				<div class="Element_Font">
+					Ir
+				</div>
+			</div>
+			<!--8族的边界-->
+			<div class="Border8group">
+
+				<!--Pt-->
+				<div class="Transition_elements"id="78" onclick="mouseClick(78)">
+					<div class="Element_Z">
+						78
+					</div>
+					<div class="Element_Font">
+						Pt
+					</div>
+				</div>
+				<!--Au-->
+				<div class="Transition_elements"id="79" onclick="mouseClick(79)">
+					<div class="Element_Z">
+						79
+					</div>
+					<div class="Element_Font">
+						Au
+					</div>
+				</div>
+				<!--Hg-->
+				<div class="Transition_elements"id="80" onclick="mouseClick(80)">
+					<div class="Element_Z">
+						80
+					</div>
+					<div class="Element_Font">
+						Hg
+					</div>
+				</div>
+			</div>
+
+			<!--Tl-->
+			<div class="Main_group_metal"id="81" onclick="mouseClick(81)">
+				<div class="Element_Z">
+					81
+				</div>
+				<div class="Element_Font">
+					Tl
+				</div>
+			</div>
+			<!--Pb-->
+			<div class="Main_group_metal"id="82" onclick="mouseClick(82)">
+				<div class="Element_Z">
+					82
+				</div>
+				<div class="Element_Font">
+					Pb
+				</div>
+			</div>
+			<!--Bi-->
+			<div class="Main_group_metal"id="83" onclick="mouseClick(83)">
+				<div class="Element_Z">
+					83
+				</div>
+				<div class="Element_Font">
+					Bi
+				</div>
+			</div>
+			<!--Po-->
+			<div class="Main_group_metal"id="84" onclick="mouseClick(84)">
+				<div class="Element_Z">
+					84
+				</div>
+				<div class="Element_Font">
+					Po
+				</div>
+			</div>
+			<!--At-->
+			<div class="Halogen"id="85" onclick="mouseClick(85)">
+				<div class="Element_Z">
+					85
+				</div>
+				<div class="Element_Font">
+					At
+				</div>
+			</div>
+			<!--Rn-->
+			<div class="Inert_gas"id="86" onclick="mouseClick(86)">
+				<div class="Element_Z">
+					86
+				</div>
+				<div class="Element_Font">
+					Rn
+				</div>
+			</div>
+		</div>
+
+		<!--第七周期-->
+
+		<div class="GroupLine">
+			<div class="PeriodNumber" id="zhouqi7">7</div>
+			<!--Fr-->
+			<div class="Alkali_metal"id="87" onclick="mouseClick(87)">
+				<div class="Element_Z">
+					87
+				</div>
+				<div class="Element_Font">
+					Fr
+				</div>
+			</div>
+			<!--Ra-->
+			<div class="Alkali_earth_metal"id="88" onclick="mouseClick(88)">
+				<div class="Element_Z">
+					88
+				</div>
+				<div class="Element_Font">
+					Ra
+				</div>
+			</div>
+			<!--Ac-->
+			<div class="Actinoid">
+				<div class="Element_Z">
+					89-103
+				</div>
+				<div class="Element_FontLA">
+					Ac-Lr
+				</div>
+			</div>
+			<!--Rf-->
+			<div class="Transition_elements"id="104" onclick="mouseClick(104)">
+				<div class="Element_Z">
+					104
+				</div>
+				<div class="Element_Font">
+					Rf
+				</div>
+			</div>
+			<!--Db-->
+			<div class="Transition_elements"id="105" onclick="mouseClick(105)">
+				<div class="Element_Z">
+					105
+				</div>
+				<div class="Element_Font">
+					Db
+				</div>
+			</div>
+			<!--Sg-->
+			<div class="Transition_elements"id="106" onclick="mouseClick(106)">
+				<div class="Element_Z">
+					106
+				</div>
+				<div class="Element_Font">
+					Sg
+				</div>
+			</div>
+			<!--Bh-->
+			<div class="Transition_elements"id="107" onclick="mouseClick(107)">
+				<div class="Element_Z">
+					107
+				</div>
+				<div class="Element_Font">
+					Bh
+				</div>
+			</div>
+			<!--Hs-->
+			<div class="Transition_elements"id="108" onclick="mouseClick(108)">
+				<div class="Element_Z">
+					108
+				</div>
+				<div class="Element_Font">
+					Hs
+				</div>
+			</div>
+			<!--Mt-->
+			<div class="Transition_elements"id="109" onclick="mouseClick(109)">
+				<div class="Element_Z">
+					109
+				</div>
+				<div class="Element_Font">
+					Mt
+				</div>
+			</div>
+			<!--8族的边界-->
+			<div class="Border8group">
+
+				<!--Ds-->
+				<div class="Transition_elements"id="110" onclick="mouseClick(110)">
+					<div class="Element_Z">
+						110
+					</div>
+					<div class="Element_Font">
+						Ds
+					</div>
+				</div>
+				<!--Rg-->
+				<div class="Transition_elements"id="111" onclick="mouseClick(111)">
+					<div class="Element_Z">
+						111
+					</div>
+					<div class="Element_Font">
+						Rg
+					</div>
+				</div>
+				<!--Cn-->
+				<div class="Transition_elements"id="112" onclick="mouseClick(112)">
+					<div class="Element_Z">
+						112
+					</div>
+					<div class="Element_Font">
+						Cn
+					</div>
+				</div>
+			</div>
+
+			<!--Uut-->
+			<div class="Main_group_metal"id="113" onclick="mouseClick(113)">
+				<div class="Element_Z">
+					113
+				</div>
+				<div class="Element_Font">
+					Uut
+				</div>
+			</div>
+			<!--Fl-->
+			<div class="Main_group_metal"id="114" onclick="mouseClick(114)">
+				<div class="Element_Z">
+					114
+				</div>
+				<div class="Element_Font">
+					Fl
+				</div>
+			</div>
+			<!--Uup-->
+			<div class="Main_group_metal"id="115" onclick="mouseClick(115)">
+				<div class="Element_Z">
+					115
+				</div>
+				<div class="Element_Font">
+					Uup
+				</div>
+			</div>
+			<!--Lv-->
+			<div class="Main_group_metal"id="116" onclick="mouseClick(116)">
+				<div class="Element_Z">
+					116
+				</div>
+				<div class="Element_Font">
+					Lv
+				</div>
+			</div>
+			<!--Uus-->
+			<div class="Halogen"id="117" onclick="mouseClick(117)">
+				<div class="Element_Z">
+					117
+				</div>
+				<div class="Element_Font">
+					Uus
+				</div>
+			</div>
+			<!--Uuo-->
+			<div class="Inert_gas"id="118" onclick="mouseClick(118)">
+				<div class="Element_Z">
+					118
+				</div>
+				<div class="Element_Font">
+					Uuo
+				</div>
+			</div>
+		</div>
+		<!--空行-->
+		<div class="Line_Null">
+			<div class="PeriodNumber"></div>
+
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<!--8族的边界-->
+			<div class="Border8group_Bot">
+				<div class="Null">
+
+				</div>
+				<div class="Null">
+
+				</div>
+				<div class="Null">
+
+				</div>
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+			<div class="Null">
+
+			</div>
+		</div>
+
+		<!--镧系-->
+
+		<div class="GroupLine">
+			<div class="PeriodNumber"></div>
+			<div class="Null">
+			</div>
+			<div class="Null">
+			</div>
+			<div class="Null">
+			</div>
+			<!--La-->
+			<div class="Lanthanoid"id="57" onclick="mouseClick(57)">
+				<div class="Element_Z">
+					57
+				</div>
+				<div class="Element_Font">
+					La
+				</div>
+			</div>
+			<!--Ce-->
+
+			<div class="Lanthanoid"id="58" onclick="mouseClick(58)">
+				<div class="Element_Z">
+					58
+				</div>
+				<div class="Element_Font">
+					Ce
+				</div>
+			</div>
+			<!--Pr-->
+			<div class="Lanthanoid"id="59" onclick="mouseClick(59)">
+				<div class="Element_Z">
+					59
+				</div>
+				<div class="Element_Font">
+					Pr
+				</div>
+			</div>
+			<!--Nd-->
+			<div class="Lanthanoid"id="60" onclick="mouseClick(60)">
+				<div class="Element_Z">
+					60
+				</div>
+				<div class="Element_Font">
+					Nd
+				</div>
+			</div>
+			<!--Pm-->
+			<div class="Lanthanoid"id="61" onclick="mouseClick(61)">
+				<div class="Element_Z">
+					61
+				</div>
+				<div class="Element_Font">
+					Pm
+				</div>
+			</div>
+			<!--Sm-->
+			<div class="Lanthanoid"id="62" onclick="mouseClick(62)">
+				<div class="Element_Z">
+					62
+				</div>
+				<div class="Element_Font">
+					Sm
+				</div>
+			</div>
+			<!--Eu-->
+			<div class="Lanthanoid"id="63" onclick="mouseClick(63)">
+				<div class="Element_Z">
+					63
+				</div>
+				<div class="Element_Font">
+					Eu
+				</div>
+			</div>
+			<!--Gd-->
+			<div class="Lanthanoid"id="64" onclick="mouseClick(64)">
+				<div class="Element_Z">
+					64
+				</div>
+				<div class="Element_Font">
+					Gd
+				</div>
+			</div>
+			<!--Tb-->
+			<div class="Lanthanoid"id="65" onclick="mouseClick(65)">
+				<div class="Element_Z">
+					65
+				</div>
+				<div class="Element_Font">
+					Tb
+				</div>
+			</div>
+			<!--Dy-->
+			<div class="Lanthanoid"id="66" onclick="mouseClick(66)">
+				<div class="Element_Z">
+					66
+				</div>
+				<div class="Element_Font">
+					Dy
+				</div>
+			</div>
+			<!--Ho-->
+			<div class="Lanthanoid"id="67" onclick="mouseClick(67)">
+				<div class="Element_Z">
+					67
+				</div>
+				<div class="Element_Font">
+					Ho
+				</div>
+			</div>
+			<!--Er-->
+			<div class="Lanthanoid"id="68" onclick="mouseClick(68)">
+				<div class="Element_Z">
+					68
+				</div>
+				<div class="Element_Font">
+					Er
+				</div>
+			</div>
+			<!--Tm-->
+			<div class="Lanthanoid"id="69" onclick="mouseClick(69)">
+				<div class="Element_Z">
+					69
+				</div>
+				<div class="Element_Font">
+					Tm
+				</div>
+			</div>
+			<!--Yb-->
+			<div class="Lanthanoid"id="70" onclick="mouseClick(70)">
+				<div class="Element_Z">
+					70
+				</div>
+				<div class="Element_Font">
+					Yb
+				</div>
+			</div>
+			<!--Lu-->
+			<div class="Lanthanoid"id="71" onclick="mouseClick(71)">
+				<div class="Element_Z">
+					71
+				</div>
+				<div class="Element_Font">
+					Lu
+				</div>
+			</div>
+
+		</div>
+
+		<!--锕系-->
+
+		<div class="GroupLine">
+			<div class="PeriodNumber"></div>
+			<div class="Null">
+			</div>
+			<div class="Null">
+			</div>
+			<div class="Null">
+			</div>
+			<!--Ac-->
+			<div class="Actinoid"id="89" onclick="mouseClick(89)">
+				<div class="Element_Z">
+					89
+				</div>
+				<div class="Element_Font">
+					Ac
+				</div>
+			</div>
+			<!--Th-->
+			<div class="Actinoid"id="90" onclick="mouseClick(90)">
+				<div class="Element_Z">
+					90
+				</div>
+				<div class="Element_Font">
+					Th
+				</div>
+			</div>
+			<!--Pa-->
+			<div class="Actinoid"id="91" onclick="mouseClick(91)">
+				<div class="Element_Z">
+					91
+				</div>
+				<div class="Element_Font">
+					Pa
+				</div>
+			</div>
+			<!--U-->
+			<div class="Actinoid"id="92" onclick="mouseClick(92)">
+				<div class="Element_Z">
+					92
+				</div>
+				<div class="Element_Font">
+					U
+				</div>
+			</div>
+			<!--Np-->
+			<div class="Actinoid"id="93" onclick="mouseClick(93)">
+				<div class="Element_Z">
+					93
+				</div>
+				<div class="Element_Font">
+					Np
+				</div>
+			</div>
+			<!--Pu-->
+			<div class="Actinoid"id="94" onclick="mouseClick(94)">
+				<div class="Element_Z">
+					94
+				</div>
+				<div class="Element_Font">
+					Pu
+				</div>
+			</div>
+			<!--Am-->
+			<div class="Actinoid"id="95" onclick="mouseClick(95)">
+				<div class="Element_Z">
+					95
+				</div>
+				<div class="Element_Font">
+					Am
+				</div>
+			</div>
+			<!--Cm-->
+			<div class="Actinoid"id="96" onclick="mouseClick(96)">
+				<div class="Element_Z">
+					96
+				</div>
+				<div class="Element_Font">
+					Cm
+				</div>
+			</div>
+			<!--Bk-->
+			<div class="Actinoid"id="97" onclick="mouseClick(97)">
+				<div class="Element_Z">
+					97
+				</div>
+				<div class="Element_Font">
+					Bk
+				</div>
+			</div>
+			<!--Cf-->
+			<div class="Actinoid"id="98" onclick="mouseClick(98)">
+				<div class="Element_Z">
+					98
+				</div>
+				<div class="Element_Font">
+					Cf
+				</div>
+			</div>
+			<!--Es-->
+			<div class="Actinoid"id="99" onclick="mouseClick(99)">
+				<div class="Element_Z">
+					99
+				</div>
+				<div class="Element_Font">
+					Es
+				</div>
+			</div>
+			<!--Fm-->
+			<div class="Actinoid"id="100" onclick="mouseClick(100)">
+				<div class="Element_Z">
+					100
+				</div>
+				<div class="Element_Font">
+					Fm
+				</div>
+			</div>
+			<!--Mc-->
+			<div class="Actinoid"id="101" onclick="mouseClick(101)">
+				<div class="Element_Z">
+					101
+				</div>
+				<div class="Element_Font">
+					Mc
+				</div>
+			</div>
+			<!--No-->
+			<div class="Actinoid"id="102" onclick="mouseClick(102)">
+				<div class="Element_Z">
+					102
+				</div>
+				<div class="Element_Font">
+					No
+				</div>
+			</div>
+			<!--Lr-->
+			<div class="Actinoid"id="103" onclick="mouseClick(103)">
+				<div class="Element_Z">
+					103
+				</div>
+				<div class="Element_Font">
+					Lr
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
