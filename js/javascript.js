@@ -158,8 +158,14 @@ function mouseClick(id) {
 		periodNum.style.backgroundColor = "lightgray";
 	}
 	
-	//显示器上显示元素的具体信息
+	//显示器上显示元素的具体信息font-size: 25px;text-align: right;border:1px solid black;
 	$(".Monitor").empty();
-	$(".Monitor").append("<div>"+id+"<div>");
+	$(".Monitor").append("<div style='width:58px;height:80px;color: black;float: left;'><div style='font-size: 25px;text-align: right;margin-top:2px;margin-right:5px;'>"+id+"</div><div style='font-size: 25px;text-align: right;margin-top:25px;margin-right:5px;'>"+id+"</div><div>");
 	
+	$.getJSON("data.json", function(json){
+		$(".Monitor").append("<div style='width:63px;color: black;float: left;font-size: 70px;text-align: center;' >"+json[id-1].name+"<div>");
+		$(".Monitor").append("<div style='width:188px;color: black;float: left;font-size: 25px;text-align: center;' >"+json[id-1].symbol+":"+json[id-1].ename+"<div>");
+		$(".Monitor").append("<div style='width:188px;color: black;float: left;font-size: 15px;text-align: left;margin:5px;' >"+"电子排布:"+"<div>");
+		$(".Monitor").append("<div style='width:188px;color: black;float: left;font-size: 20px;text-align: center;' >"+json[id-1].electron+"<div>");
+});
 }
