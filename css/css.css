@@ -1,0 +1,597 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+		其他主族金属
+		 */
+
+.Main_group_metal {
+	width: 60px;
+	/*
+			PaleTurquoise
+			LimeGreen
+			BurlyWood
+			 */
+	height: 60px;
+	background: Pink;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+非金属
+ */
+
+.Nonmetal {
+	width: 60px;
+	height: 60px;
+	background: #f7ca8b;
+	/*DarkSalmon LightSalmon*/
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+碱金属
+ */
+
+.Alkali_metal {
+	width: 60px;
+	height: 60px;
+	background: MediumSeaGreen;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+	font:
+}
+
+
+/*
+碱土金属
+ */
+
+.Alkali_earth_metal {
+	width: 60px;
+	height: 60px;
+	background: MediumSpringGreen;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+	padding: auto;
+}
+
+
+/*
+卤素
+ */
+
+.Halogen {
+	width: 60px;
+	height: 60px;
+	background: Plum;
+	/*MediumOrchid*/
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+稀有气体
+ */
+
+.Inert_gas {
+	width: 60px;
+	height: 60px;
+	background: Gainsboro;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+镧系
+ */
+
+.Lanthanoid {
+	width: 60px;
+	height: 60px;
+	background: Cyan;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+锕系
+ */
+
+.Actinoid {
+	width: 60px;
+	height: 60px;
+	background: DeepSkyBlue;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+		空的
+		 */
+
+.Null {
+	width: 60px;
+	height: 60px;
+	margin: 2px;
+	border: 1px solid #ffffff;
+	float: left;
+	text-align: center;
+}
+
+
+/*
+	过渡区
+	 */
+
+.Transition_elements {
+	width: 60px;
+	height: 60px;
+	background-color: PaleGoldenRod;
+	border-radius: 10px;
+	margin: 2px;
+	border: 1px solid MediumAquaMarine;
+	float: left;
+}
+
+
+/*
+	显示框
+	 */
+
+.Monitor {
+	width: 188px;
+	height: 188px;
+	background: #b3ffaf;
+	border-radius: 15px;
+	margin: 2px;
+	border: 2px solid white;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	color: red;
+}
+
+
+/*
+	标题栏
+	 */
+
+.Titlebar {
+	background: gray;
+	height: 80px;
+	margin-bottom: 10px;
+	box-shadow: 0 2px gray;
+}
+
+
+/*
+	数字栏
+	 */
+
+.Numberline {
+	width: 1250px;
+	height: 25px;
+	overflow: hidden;
+	margin-left: 3px;
+}
+
+
+/*
+	镧系上面的空行
+	 */
+
+.Line_Null {
+	width: 1250px;
+	height: 25px;
+	overflow: hidden;
+	margin: auto;
+}
+
+
+/*
+	用于标记
+	 */
+
+.Numberline_2 {
+	width: 60px;
+	height: 25px;
+	overflow: hidden;
+	padding-top: 35px;
+	margin: auto auto 0 auto;
+}
+
+
+/*
+	族编号
+	 */
+
+.GroupNumber {
+	width: 57px;
+	height: 20px;
+	text-align: center;
+	margin-top: 3px;
+	margin-left: 1px;
+	border: 1px;
+	border-radius: 4px;
+	float: left;
+}
+
+
+/*
+	周期编号
+	 */
+
+.PeriodNumber {
+	width: 16px;
+	height: 40px;
+	margin: 2px;
+	float: left;
+	border-radius: 4px;
+	padding-top: 20px;
+	padding-left: 6px;
+}
+
+
+/*
+	一个周期的模式(行)
+	 */
+
+.GroupLine {
+	width: 1250px;
+	height: 65px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/*
+	前三个周期公共模式(行)
+	height:195+25=220;
+	 */
+
+.Top3Groups {
+	width: 1250px;
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/*
+	前三行显示栏左边部分
+	height:3*65+25=220;
+	width:2*66+16? 153px;
+	 */
+
+.Top3Groups_Left {
+	width: 158px;
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+	float: left;
+}
+
+
+/*
+	前三行显示栏部分
+	height:3*65+25=220;
+	width:3*67;
+	 */
+
+.Top3Groups_Monitor {
+	width: 198px;
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+	float: left;
+}
+
+
+/*
+	前三行标记栏部分
+	width: 7*66px=462px+2(8族的边界);
+	height:3*65+25=220;
+	 */
+
+.Top3Groups_Mark {
+	width: 464px;
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+	float: left;
+}
+
+
+/*前三行标记栏右边元素部分
+	width: 6*66px=396px+4=400;
+	height: 220px;
+	*/
+
+.Top3Groups_Right {
+	width: 400px;
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+	float: left;
+}
+
+
+/*
+	标记栏部分格式
+	width:462/2=231;
+	height:195/5=39;
+	 */
+
+.Mark_Line {
+	width: 231px;
+	height: 37px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	overflow: hidden;
+	float: left;
+	border-radius: 10px;
+}
+
+
+/*
+		主族金属格子标记
+		width:height:195/5=39;
+		 */
+
+.Main_group_metal_Grid {
+	width: 37px;
+	height: 37px;
+	background: Pink;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	/*margin-top:1px ;*/
+	float: left;
+}
+
+
+/*
+非金属格子标记
+		width:height:195/5=39;
+ */
+
+.Nonmetal_Grid {
+	width: 37px;
+	height: 37px;
+	background: #f7ca8b;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	float: left;
+}
+
+
+/*
+碱金属格子标记
+		width:height:195/5=39;
+ */
+
+.Alkali_metal_Grid {
+	width: 37px;
+	height: 37px;
+	background: MediumSeaGreen;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	float: left;
+}
+
+
+/*
+	过渡区格子标记
+		width:height:195/5=39;
+	 */
+
+.Transition_elements_Grid {
+	width: 37px;
+	height: 37px;
+	background: PaleGoldenRod;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	float: left;
+}
+
+
+/*
+碱土金属
+ */
+
+.Alkali_earth_metal_Grid {
+	width: 37px;
+	height: 37px;
+	background: MediumSpringGreen;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	float: left;
+	padding: auto;
+}
+
+
+/*		
+卤素
+margin: 1px auto 1px 3px;
+ */
+
+.Halogen_Grid {
+	width: 37px;
+	height: 37px;
+	/*MediumOrchid*/
+	background: Plum;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	float: left;
+}
+
+
+/*
+稀有气体
+ */
+
+.Inert_gas_Grid {
+	width: 37px;
+	height: 37px;
+	background: Gainsboro;
+	border-radius: 10px;
+	float: left;
+	/*margin: 1px auto 1px 3px;*/
+}
+
+
+/*
+镧系
+ */
+
+.Lanthanoid_Grid {
+	width: 37px;
+	height: 37px;
+	background: Cyan;
+	border-radius: 10px;
+	float: left;
+	/*margin: 1px auto 1px 3px;*/
+}
+
+
+/*
+锕系
+ */
+
+.Actinoid_Grid {
+	width: 37px;
+	height: 37px;
+	background: DeepSkyBlue;
+	border-radius: 10px;
+	/*margin: 1px auto 1px 3px;*/
+	float: left;
+}
+
+
+/*
+元素类型名称
+ */
+
+.Element_Mark {
+	height: 37px;
+	margin: 1px auto 1px 3px;
+	padding-top: 9px;
+	padding-left: 5px;
+	float: left;
+	font-family: 黑体;
+}
+
+
+/*
+	元素周期中的元素序号
+	width:60-6=54px;
+	 */
+
+.Element_Z {
+	width: 57px;
+	height: 12px;
+	padding-right: 5px;
+	padding-top: 2px;
+	text-align: right;
+	font-weight: 600;
+}
+
+
+/*
+	元素周期中的元素名称
+	width:60px?;
+	 */
+
+.Element_Font {
+	width: 59px;
+	height: 40px;
+	padding-top: 6px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Arial, Verdana, Sans-serif;
+	padding-top: 8px;
+}
+
+
+/*
+	元素周期中的Lanthanoid Actinoid元素名称
+	width:60px?;
+	 */
+
+.Element_FontLA {
+	width: 59px;
+	height: 40px;
+	padding-top: 6px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial, Verdana, Sans-serif;
+	padding-top: 13px;
+}
+
+
+/*
+	8族的框
+	 */
+
+.Border8group {
+	width: 198px;
+	height: 67px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	float: left;
+}
+
+
+/*
+	8族的框上横线
+	 */
+
+.Border8group_Top {
+	width: 198px;
+	height: 67px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	float: left;
+}
+
+
+/*
+	8族的框下横线
+	 */
+
+.Border8group_Bot {
+	width: 200px;
+	height: 67px;
+	border-top: 1px solid black;
+	float: left;
+}
